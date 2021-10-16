@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Activity Tracker</string>
+    <string name="registration">Зарегистрироваться</string>
+    <string name="uzhe">Уже есть аккаунт?</string>
+    <string name="luchshi">Пожалй, лучший фитнес трекер в ДВФУ</string>
+    <string name="sozdaniy">Созданный студентами 2-го курса</string>
+    <string name="title_activity_main">Регистрация</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="your_string"> Нажимая на кнопку, вы соглашаетесь с <font color="#0000FF">политикой конфиденциальности </font>и обработки персональных данных, а также принимаете <font color="#0000FF">пользовательское соглашение</font></string>
+    <string name="login">Логин</string>
+    <string name="Password">Пароль</string>
+    <string name="Name">Имя или никнейм</string>
+    <string name="tryPass">Повторите пароль</string>
+    <string name="Female">Женский</string>
+    <string name="Male">Мужской</string>
+    <string name="Enother">Другой</string>
+    <string name="Sex">Пол</string>
 </resources>
