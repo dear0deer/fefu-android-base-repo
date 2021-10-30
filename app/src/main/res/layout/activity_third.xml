@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThirdActivity">
+    tools:context=".homework1.ThirdActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbarBack"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         app:title="Вход"
@@ -26,7 +26,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:context=".SecondActivity">
+            tools:context=".homework1.SecondActivity">
 
             <ImageView
                 android:id="@+id/banner"
@@ -86,7 +86,7 @@
 
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/ButtonReg"
+                android:id="@+id/ButtonLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"

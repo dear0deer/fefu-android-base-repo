@@ -5,23 +5,27 @@
     <application>
         <activity
             android:name=".FourthActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ThirdActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SecondActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/title_activity_main"
             android:theme="@style/Theme.Activity.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".homework1.ThirdActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Activity.NoActionBar"/>
+        <activity
+            android:name=".homework1.SecondActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Activity.NoActionBar"/>
+        <activity
+            android:name=".homework1.MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Activity.NoActionBar">
         </activity>
     </application>
 
