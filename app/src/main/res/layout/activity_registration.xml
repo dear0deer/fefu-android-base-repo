@@ -26,7 +26,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:context=".homework1.SecondActivity">
+            tools:context=".homework1.RegistrationScreen">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputLayout1"

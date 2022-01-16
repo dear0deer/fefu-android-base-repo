@@ -1,22 +1,44 @@
 package ru.fefu.activitytracker.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import ru.fefu.activitytracker.ItemAdapter
+import ru.fefu.activitytracker.ListItem
 import ru.fefu.activitytracker.R
+import ru.fefu.activitytracker.databinding.FragmentActivityUsersBinding
 
+class ActivityUsersFragment : BaseFragment<FragmentActivityUsersBinding>(R.layout.fragment_activity_users) {
+    private val usersListRepository = UsersListRepo()
+    private val adapterItems = ItemAdapter(usersListRepository.getItem())
 
-class ActivityUsersFragment : Fragment() {
-
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_activity_users, container, false)
-
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        with(binding.rcView) {
+            adapter = adapterItems
+            layoutManager = LinearLayoutManager(requireContext())
+        }
+
+        adapterItems.setItemClickListener {
+            val manager = activity?.supportFragmentManager?.findFragmentByTag("activityFragment")?.childFragmentManager
+            manager?.beginTransaction()?.apply {
+                manager.fragments.forEach(::hide)
+                replace(
+                    R.id.activity_fragment_flow_container,
+                    UsersActivityDetailsFragment.newInstance(usersListRepository.getItem()[it] as ListItem.Item),
+                    "tadUsers"
+                )
+                addToBackStack(null)
+                commit()
+            }
+        }
+    }
+
+
+
 }

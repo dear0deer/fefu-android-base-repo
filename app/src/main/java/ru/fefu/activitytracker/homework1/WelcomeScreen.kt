@@ -6,19 +6,19 @@ import android.os.Bundle
 import android.widget.Button
 import ru.fefu.activitytracker.R
 
-class MainActivity : AppCompatActivity() {
+class WelcomeScreen : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_welcome_screen)
         val login_button : Button =  findViewById(R.id.ButtonLog);
         val registration : Button =  findViewById(R.id.ButtonReg);
         registration.setOnClickListener{
-            startActivity(Intent(this,SecondActivity::class.java))
+            startActivity(Intent(this,RegistrationScreen::class.java))
         }
         login_button.setOnClickListener{
-            startActivity(Intent(this,ThirdActivity::class.java))
+            startActivity(Intent(this,LoginScreen::class.java))
         }
     }
 }

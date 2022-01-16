@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".homework1.ThirdActivity">
+    tools:context=".homework1.LoginScreen">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarBack"
@@ -26,7 +26,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:context=".homework1.SecondActivity">
+            tools:context=".homework1.RegistrationScreen">
 
             <ImageView
                 android:id="@+id/banner"
