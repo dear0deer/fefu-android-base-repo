@@ -5,20 +5,23 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import ru.fefu.activitytracker.R
+import ru.fefu.activitytracker.databinding.ActivityWelcomeScreenBinding
 
 class WelcomeScreen : AppCompatActivity() {
-
+    private lateinit var binding: ActivityWelcomeScreenBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_welcome_screen)
-        val login_button : Button =  findViewById(R.id.ButtonLog);
-        val registration : Button =  findViewById(R.id.ButtonReg);
-        registration.setOnClickListener{
-            startActivity(Intent(this,RegistrationScreen::class.java))
+        binding = ActivityWelcomeScreenBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.ButtonReg.setOnClickListener {
+            startActivity(Intent(this, RegistrationScreen::class.java))
         }
-        login_button.setOnClickListener{
-            startActivity(Intent(this,LoginScreen::class.java))
+
+        binding.ButtonLog.setOnClickListener {
+            startActivity(Intent(this, LoginScreen::class.java))
         }
+
     }
 }

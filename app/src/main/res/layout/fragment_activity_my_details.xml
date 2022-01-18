@@ -37,6 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Расстояние"
+            android:textColor="@color/black2"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -53,6 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24sp"
             android:text="Время"
+            android:textColor="@color/black2"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -67,6 +69,7 @@
                 android:layout_marginRight="8sp"
                 android:layout_weight="0"
                 android:text="Старт"
+                android:textColor="@color/black2"
                 android:textSize="16sp" />
 
             <TextView
@@ -92,6 +95,7 @@
                 android:layout_marginRight="8sp"
                 android:layout_weight="0"
                 android:text="Финиш"
+                android:textColor="@color/black2"
                 android:textSize="16sp" />
 
             <TextView

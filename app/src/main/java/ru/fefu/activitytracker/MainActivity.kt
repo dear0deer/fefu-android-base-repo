@@ -7,6 +7,7 @@ import ru.fefu.activitytracker.databinding.ActivityMainBinding
 import ru.fefu.activitytracker.fragments.ActivityFragmentFlow
 import ru.fefu.activitytracker.fragments.ProfileFragment
 
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
